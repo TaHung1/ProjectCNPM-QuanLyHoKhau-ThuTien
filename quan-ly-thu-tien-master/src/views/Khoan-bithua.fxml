@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1025.0" styleClass="pane" stylesheets="@../source/Main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView layoutX="9.0" layoutY="91.0" prefHeight="600.0" prefWidth="900.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="100.0">
+        <columns>
+          <TableColumn prefWidth="129.0" text="Mã khoản thu" />
+          <TableColumn prefWidth="381.0" text="Tên khoản thu" />
+            <TableColumn prefWidth="193.0" text="Số tiền" />
+            <TableColumn prefWidth="301.0" text="Loại khoản thu" />
+        </columns>
+      </TableView>
+      <TextField layoutX="9.0" layoutY="44.0" prefHeight="40.0" prefWidth="326.0" AnchorPane.bottomAnchor="610.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="689.0" AnchorPane.topAnchor="50.0" />
+      <ComboBox layoutX="419.0" layoutY="44.0" prefHeight="40.0" prefWidth="412.0" AnchorPane.bottomAnchor="610.0" AnchorPane.leftAnchor="419.0" AnchorPane.rightAnchor="194.0" AnchorPane.topAnchor="50.0" />
+      <Button layoutX="852.0" layoutY="44.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="163.0" styleClass="button3" stylesheets="@../source/Main.css" text="Tìm kiếm" AnchorPane.bottomAnchor="610.0" AnchorPane.leftAnchor="852.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="50.0" />
+      <Button layoutX="9.0" layoutY="5.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="326.0" styleClass="button1" stylesheets="@../source/Main.css" text="Thêm khoản thu" AnchorPane.bottomAnchor="655.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="689.0" AnchorPane.topAnchor="5.0" />
+      <Button layoutX="355.0" layoutY="5.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="326.0" styleClass="button1" stylesheets="@../source/Main.css" text="Xóa khoản thu" AnchorPane.bottomAnchor="655.0" AnchorPane.leftAnchor="355.0" AnchorPane.rightAnchor="344.0" AnchorPane.topAnchor="5.0" />
+      <Button layoutX="697.0" layoutY="5.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="318.0" styleClass="button1" stylesheets="@../source/Main.css" text="Sửa khoản thu" AnchorPane.bottomAnchor="655.0" AnchorPane.leftAnchor="697.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="5.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1025.0" styleClass="pane" stylesheets="@../source/Main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.NopTienController">
+   <children>
+      <TableView fx:id="tvNopTien" layoutX="14.0" layoutY="103.0" prefHeight="600.0" prefWidth="871.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="100.0">
+        <columns>
+          <TableColumn fx:id="tbcTenNguoi" prefWidth="242.0" text="Tên người nộp" />
+          <TableColumn fx:id="tbcIDNopTien" prefWidth="163.0" text="Mã Hộ" />
+          <TableColumn fx:id="tbcNgayThu" prefWidth="180.0" text="Ngày thu" />
+            <TableColumn fx:id="tbcTenKhoanThu" prefWidth="419.0" text="Tên khoản thu" />
+        </columns>
+      </TableView>
+      <TextField fx:id="tfSearch" layoutX="10.0" layoutY="54.0" prefHeight="40.0" prefWidth="340.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="50.0" />
+      <Button layoutX="875.0" layoutY="54.0" mnemonicParsing="false" onAction="#searchNopTien" prefHeight="40.0" prefWidth="140.0" styleClass="button3" stylesheets="@../source/Main.css" text="Tìm kiếm" AnchorPane.bottomAnchor="610.0" AnchorPane.leftAnchor="875.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="50.0" />
+      <Button layoutX="10.0" layoutY="3.0" mnemonicParsing="false" onAction="#addNopTien" prefHeight="40.0" prefWidth="340.0" styleClass="button1" stylesheets="@../source/Main.css" text="Thêm nộp tiền" AnchorPane.bottomAnchor="655.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="675.0" AnchorPane.topAnchor="5.0" />
+      <Button layoutX="362.0" layoutY="5.0" mnemonicParsing="false" onAction="#delNopTien" prefHeight="40.0" prefWidth="348.0" styleClass="button1" stylesheets="@../source/Main.css" text="Xóa nộp tiền" AnchorPane.bottomAnchor="655.0" AnchorPane.leftAnchor="362.0" AnchorPane.rightAnchor="315.0" AnchorPane.topAnchor="5.0" />
+      <ComboBox fx:id="cbChooseSearch" layoutX="450.0" layoutY="54.0" prefHeight="40.0" prefWidth="404.0" AnchorPane.bottomAnchor="610.0" AnchorPane.leftAnchor="450.0" AnchorPane.rightAnchor="171.0" AnchorPane.topAnchor="50.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1025.0" stylesheets="@../source/Main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ThongKeController">
+   <children>
+      <TableView fx:id="tvThongKe" layoutX="13.0" layoutY="178.0" prefHeight="500.0" prefWidth="1000.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="100.0">
+        <columns>
+            <TableColumn fx:id="colTenPhi" prefWidth="487.0" text="Tên phí" />
+            <TableColumn fx:id="colTongSoTien" prefWidth="517.0" text="Tổng số tiền " />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="cbChooseSearch" layoutX="10.0" layoutY="42.0" prefHeight="39.0" prefWidth="224.0" />
+      <Button layoutX="250.0" layoutY="43.0" mnemonicParsing="false" onAction="#loc" prefHeight="37.0" prefWidth="82.0" styleClass="buttonLoc" text="Lọc">
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../source/icon-search.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

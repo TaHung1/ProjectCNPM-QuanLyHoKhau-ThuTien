@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="700.0" prefWidth="700.0" styleClass="pane" stylesheets="@../../source/change.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.nhankhau.UpdateNhanKhau">
+   <children>
+      <Pane layoutX="75.0" layoutY="137.0" prefHeight="481.0" prefWidth="564.0" styleClass="subpane" AnchorPane.leftAnchor="75.0" AnchorPane.rightAnchor="61.0">
+         <children>
+            <Label layoutX="36.0" layoutY="205.0" text="Ngày sinh" />
+            <TextField fx:id="tfTuoi" layoutX="169.0" layoutY="196.0" prefHeight="39.0" prefWidth="267.0" />
+            <TextField fx:id="tfSoCMND" layoutX="169.0" layoutY="259.0" prefHeight="39.0" prefWidth="267.0" />
+            <TextField fx:id="tfTenNhanKhau" layoutX="169.0" layoutY="131.0" prefHeight="39.0" prefWidth="267.0" />
+            <Label layoutX="37.0" layoutY="140.0" text="Tên nhân khẩu" />
+            <Label layoutX="37.0" layoutY="268.0" text="Số CMND" />
+            <TextField fx:id="tfSoDienThoai" layoutX="169.0" layoutY="315.0" prefHeight="39.0" prefWidth="267.0" />
+            <Label layoutX="33.0" layoutY="324.0" text="Số điện thoại" />
+            <Label layoutX="38.0" layoutY="83.0" text="Mã nhân khẩu" />
+            <TextField fx:id="tfMaNhanKhau" editable="false" style="-fx-background-color: #eaeaea;" layoutX="169.0" layoutY="74.0" prefHeight="39.0" prefWidth="267.0" />
+            <Label layoutX="37.0" layoutY="386.0" prefHeight="21.0" prefWidth="80.0" text="Trạng thái " />
+            <ComboBox fx:id="tfTrangThai" layoutX="169.0" layoutY="377.0" prefHeight="39.0" prefWidth="94.0" />
+            <Label layoutX="37.0" layoutY="434.0" prefHeight="21.0" prefWidth="80.0" text="Giới tính" />
+            <ComboBox fx:id="tfGioiTinh" layoutX="169.0" layoutY="425.0" prefHeight="39.0" prefWidth="94.0" />
+            <TextField fx:id="tfMaHoKhau" layoutX="169.0" layoutY="20.0" prefHeight="39.0" prefWidth="267.0" />
+            <Label layoutX="38.0" layoutY="29.0" text="Mã hộ khẩu" />
+         </children>
+      </Pane>
+      <Button layoutX="310.0" layoutY="643.0" mnemonicParsing="false" onAction="#updateNhanKhau" style="-fx-background-color: #cccccc;" text="Cập nhật" />
+      <Label layoutX="190.0" layoutY="53.0" text="Thay đổi thông tin nhân khẩu" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #cccccc;" stylesheets="@../source/login.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <children>
+      <Pane prefHeight="200.0" prefWidth="1000.0" style="-fx-background-color: #068680;">
+         <children>
+            <AnchorPane layoutX="129.0" layoutY="87.0" prefHeight="414.0" prefWidth="747.0" styleClass="pane" stylesheets="@../source/login.css">
+               <children>
+                  <Button fx:id="btnLogin" layoutX="317.0" layoutY="314.0" mnemonicParsing="false" onAction="#Login" prefHeight="39.0" prefWidth="115.0" styleClass="button2" stylesheets="@../source/login.css" text="Login" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <PasswordField fx:id="tfPassword" layoutX="224.0" layoutY="229.0" prefHeight="39.0" prefWidth="300.0" promptText="Password" style="-fx-border-style: none;">
+                     <font>
+                        <Font size="20.0" />
+                     </font></PasswordField>
+                  <TextField fx:id="tfUsername" layoutX="224.0" layoutY="173.0" prefHeight="39.0" prefWidth="300.0" promptText="Username">
+                     <font>
+                        <Font size="20.0" />
+                     </font></TextField>
+                  <ImageView fitHeight="39.0" fitWidth="48.0" layoutX="168.0" layoutY="176.0" opacity="0.35" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../source/icon-username.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="39.0" fitWidth="39.0" layoutX="172.0" layoutY="232.0" opacity="0.35" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../source/icon-password.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="312.0" layoutY="73.0" text="LOGIN" textFill="#068680">
+                     <font>
+                        <Font name="System Bold" size="40.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

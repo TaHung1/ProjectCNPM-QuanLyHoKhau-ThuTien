@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomeController">
+   <children>
+      <HBox layoutX="1.0" prefHeight="700.0" prefWidth="1200.0">
+         <children>
+            <VBox prefHeight="700.0" prefWidth="180.0" spacing="30.0" styleClass="pane" stylesheets="@../source/Home.css">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#setTrangChu" prefHeight="98.0" prefWidth="180.0" styleClass="button3" stylesheets="@../source/Home.css" text="Trang chủ" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="20.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="43.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../source/icon-home.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="btnNhanKhau" layoutX="20.0" layoutY="185.0" mnemonicParsing="false" onAction="#setNhanKhau" prefHeight="70.0" prefWidth="180.0" styleClass="button3" stylesheets="@../source/Home.css" text="Nhân khẩu" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="33.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../source/icon-nhankhau.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnHoKhau" mnemonicParsing="false" onAction="#setHoKhau" prefHeight="70.0" prefWidth="160.0" styleClass="button3" stylesheets="@../source/Home.css" text="Hộ khẩu" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Arial Bold" size="20.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../source/icon-hokhau.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnKhoanPhi" layoutX="20.0" layoutY="191.0" mnemonicParsing="false" onAction="#setKhoanPhi" prefHeight="70.0" prefWidth="180.0" styleClass="button3" stylesheets="@../source/Home.css" text="Khoản phí" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Arial Bold" size="20.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="36.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../source/icon-money.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnDongPhi" layoutX="20.0" layoutY="191.0" mnemonicParsing="false" onAction="#setDongPhi" prefHeight="70.0" prefWidth="180.0" styleClass="button3" stylesheets="@../source/Home.css" text="Đóng phí" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="33.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../source/icon-money.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnThongKe" layoutX="20.0" layoutY="321.0" mnemonicParsing="false" onAction="#setThongKe" prefHeight="70.0" prefWidth="180.0" styleClass="button3" stylesheets="@../source/Home.css" text="Thống kê" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="39.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../source/icon-thongke.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </VBox>
+            <BorderPane fx:id="borderPane" prefHeight="700.0" prefWidth="1020.0" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
